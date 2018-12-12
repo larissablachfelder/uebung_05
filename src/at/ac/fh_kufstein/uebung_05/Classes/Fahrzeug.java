@@ -11,6 +11,15 @@ public class Fahrzeug
 
     public static int anzahl;
 
+    public Fahrzeug(short reifen, String color, short ps, short tueren, short geschwindigkeit) {
+        this.reifen = reifen;
+        this.color = color;
+        this.ps = ps;
+        this.tueren = tueren;
+        this.gestartet = false;
+        this.geschwindigkeit = geschwindigkeit;
+        this.anzahl+=1; //bei jeder benutzung des konstruktors wird um 1 erhöht
+    }
 
 
     public void starten()
@@ -60,5 +69,62 @@ public class Fahrzeug
         }
     }
 
+    //aufgabe 3
 
+
+    public short getReifen() {
+        return reifen;
+    }
+
+    public void setReifen(short reifen) {
+        this.reifen = reifen;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public short getPs() {
+        return ps;
+    }
+
+    public void setPs(short ps) {
+        this.ps = ps;
+    }
+
+    public short getTueren() {
+        return tueren;
+    }
+
+    public void setTueren(short tueren) {
+        this.tueren = tueren;
+    }
+
+    public boolean isGestartet() {
+        return gestartet;
+    }
+
+    public void setGestartet(boolean gestartet) {
+        this.gestartet = gestartet;
+    }
+
+    public short getGeschwindigkeit() {
+        return geschwindigkeit;
+    }
+
+    public void setGeschwindigkeit(short geschwindigkeit) {
+        this.geschwindigkeit = geschwindigkeit;
+    }
+
+    public static int getAnzahl() {
+        return anzahl;
+    }
+
+    public static void setAnzahl(int anzahl) {
+        Fahrzeug.anzahl = anzahl;
+    }
 }

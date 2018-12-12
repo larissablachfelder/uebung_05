@@ -31,4 +31,30 @@ public class Auto extends Fahrzeug
 
         }
     }
+
+    //aufgabe3
+
+    public boolean getKlimaanlage() {
+        return klimaanlage;
+    }
+
+    public void setKlimaanlage(boolean klimaanlage) {
+        this.klimaanlage = klimaanlage;
+    }
+
+    public short getAirbag() {
+        return airbag;
+    }
+
+    public void setAirbag(short airbag) {
+        this.airbag = airbag;
+    }
+
+    //aufgabe 4
+
+    public Auto( short airbag, short reifen, String color, short ps, short tueren, short geschwindigkeit, int anzahl) {
+        super(reifen, color, ps, tueren, geschwindigkeit);
+        this.klimaanlage = false;
+        this.airbag = airbag;
+    }
 }
