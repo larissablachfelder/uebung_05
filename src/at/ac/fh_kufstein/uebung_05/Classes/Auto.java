@@ -59,4 +59,11 @@ public class Auto extends Fahrzeug
         this.klimaanlage = false;
         this.airbag = airbag;
     }
+
+    //aufgabe 6 Methode überschreiben
+
+    @Override
+    public String toString(){
+        return "Mein Auto hat "+this.getPs()+" PS und fährt mit "+this.getGeschwindigkeit()+" km/h";
+    }
 }

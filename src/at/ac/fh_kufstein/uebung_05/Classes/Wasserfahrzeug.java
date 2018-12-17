@@ -36,11 +36,22 @@ public class Wasserfahrzeug extends Fahrzeug
         this.ladung = ladung;
     }
 
-    public Wasserfahrzeug(double tiefgang, short schrauben, double ladung, short reifen, String color, short ps, short tueren, short geschwindigkeit) {
+    //aufgabe 4
+    public Wasserfahrzeug(double tiefgang, short schrauben, double ladung, short reifen, String color, short ps, short tueren, short geschwindigkeit)
+    {
         super(reifen, color, ps, tueren, geschwindigkeit);
         this.tiefgang = tiefgang;
         this.schrauben = schrauben;
         this.ladung = ladung;
+    }
+
+    //aufgabe 6
+
+        @Override
+        public String toString()
+        {
+            return "Mein Wasserfahrzeug hat "+this.getPs()+" PS und einen Tiefgang von "+getTiefgang()+" m";
+        }
 
     }
-}
+
