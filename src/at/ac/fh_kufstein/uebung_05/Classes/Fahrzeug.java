@@ -2,6 +2,7 @@ package at.ac.fh_kufstein.uebung_05.Classes;
 
 public class Fahrzeug
 {
+
     private short reifen;
     private String color;
     private short ps;

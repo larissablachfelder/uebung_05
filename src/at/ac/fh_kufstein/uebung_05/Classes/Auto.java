@@ -7,6 +7,8 @@ public class Auto extends Fahrzeug
     private boolean klimaanlage;
     private short airbag;
 
+
+
     public void klimaanlageAn()
     {
         if(this.klimaanlage==true)
@@ -27,7 +29,7 @@ public class Auto extends Fahrzeug
         }
         else
         {
-            this.klimaanlage = false;
+            this.klimaanlage = false; //könnte auch getter und setter verwenden
 
         }
     }
@@ -52,7 +54,7 @@ public class Auto extends Fahrzeug
 
     //aufgabe 4
 
-    public Auto( short airbag, short reifen, String color, short ps, short tueren, short geschwindigkeit, int anzahl) {
+    public Auto( short airbag, short reifen, String color, short ps, short tueren, short geschwindigkeit) {
         super(reifen, color, ps, tueren, geschwindigkeit);
         this.klimaanlage = false;
         this.airbag = airbag;
